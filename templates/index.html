@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="hero">
+    <img src="{{ url_for('static', filename='/images/myphoto.jpeg') }}" alt="Profile Image">
+    <h2>Hello, I'm <span>Jatin</span></h2>
+    <p>Python Developer | Flask | Web Enthusiast</p>
+    <a class="btn" href="{{ url_for('static', filename='/images/resume.pdf') }}" download>
+    Download Resume
+</a>
+
+</section>
+
+<section id="about" class="section">
+    <h2>About Me</h2>
+    <p>
+        I am a passionate fresher aiming to build a career in software development.
+        I enjoy learning new technologies and building real-world applications.
+    </p>
+</section>
+
+<section id="skills" class="section dark">
+    <h2>Technical Skills</h2>
+    <div class="skills">
+        <span>Python</span>
+        <span>Flask</span>
+        <span>HTML5</span>
+        <span>CSS3</span>
+        <span>Git</span>
+        <span>SQL</span>
+    </div>
+</section>
+
+<section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="project-card">
+        <img src="{{ url_for('static', filename='images/project1.jpg') }}">
+        <h3>Portfolio Website</h3>
+        <p>Built using Flask, HTML, and CSS to showcase my skills.</p>
+    </div>
+</section>
+
+<section id="contact" class="section dark">
+    <h2>Contact</h2>
+    <p>Email: your.email@example.com</p>
+    <p>
+        GitHub: <a href="#">github.com/yourname</a><br>
+        LinkedIn: <a href="#">linkedin.com/in/yourname</a>
+    </p>
+</section>
+
+{% endblock %}
