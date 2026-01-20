@@ -2,26 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Portfolio</title>
+    <title>Stack.dev | Portfolio</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
-<header>
-    <h1>My Portfolio</h1>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
-</header>
+<nav>
+    <div class="logo">{ } STACK</div>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/skills">Skills</a></li>
+        <li><a href="/projects">Projects</a></li>
+        <li><a href="/contact">Contact</a></li>
+    </ul>
+</nav>
 
 {% block content %}{% endblock %}
 
 <footer>
-    <p>© 2026 Your Name | Built with Flask</p>
+    <p>© 2026 Stack.dev | All Rights Reserved</p>
 </footer>
 
 </body>
