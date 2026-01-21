@@ -1,5 +1,5 @@
 **Home Section**
-<img width="1344" height="635" alt="image" src="https://github.com/user-attachments/assets/07d4d0c7-7e60-49f3-93b0-caa1b7e17d2b" />
+<img width="1348" height="632" alt="image" src="https://github.com/user-attachments/assets/0fa568da-9188-4d8c-92ff-4ec178a42366" />
 
 **About Section**
 <img width="1363" height="488" alt="image" src="https://github.com/user-attachments/assets/5506d0fd-c90c-4f2e-a77c-5936f787a3f3" />
