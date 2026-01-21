@@ -187,7 +187,7 @@ input, textarea {
 
 input::placeholder,
 textarea::placeholder {
-    color:
+    color:white;
 }
 
 /* ================= PROJECTS SECTION ================= */
@@ -307,4 +307,27 @@ textarea::placeholder {
 /* ================= HOVER EFFECT ================= */
 .project-card:hover {
     transform: translateY(-10px) scale(1.02);
+}
+
+
+/* ================= PROFILE IMAGE FIX ================= */
+
+.hero .profile-pic {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.hero .profile-pic img {
+    width: 120px !important;
+    height: 120px !important;
+    border-radius: 50% !important;
+    object-fit: cover !important;
+
+    border: 3px solid #ffffff;
+    box-shadow:
+        0 0 15px rgba(0, 255, 255, 0.6),
+        0 0 30px rgba(120, 0, 255, 0.4);
+
+    background: #000;
 }

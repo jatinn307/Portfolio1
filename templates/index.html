@@ -2,9 +2,19 @@
 {% block content %}
 
 <section class="hero">
-    <h1>Building <span>Digital Solutions</span></h1>
-    <p>Full-Stack Developer | Flask | Python | Modern UI</p>
-    <a class="btn" href="/projects">View Projects</a>
+
+    <div class="profile-pic">
+        <img src="{{ url_for('static', filename='images/myphoto.jpeg') }}" alt="Profile Photo">
+    </div>
+
+    <div class="hero-content">
+        <h1>Building <span>Digital Solutions</span></h1>
+        <p>Full-Stack Developer | Flask | Python | Modern UI</p>
+      
+    </div>
+
+  <a class="btn" href="/projects">View Projects</a>
+
 </section>
 
 {% endblock %}
