@@ -193,7 +193,7 @@ textarea::placeholder {
 /* ================= PROJECTS SECTION ================= */
 
 .projects-section {
-  padding: 100px 10%;
+  padding: 50px 10%;
   min-height: 100vh; /* or at least some height */
 }
 
@@ -315,12 +315,12 @@ textarea::placeholder {
 .hero .profile-pic {
     display: flex;
     justify-content: center;
-    margin-bottom: 25px;
+    margin-bottom: 50px;
 }
 
 .hero .profile-pic img {
-    width: 120px !important;
-    height: 120px !important;
+    width: 240px !important;
+    height: 240px !important;
     border-radius: 50% !important;
     object-fit: cover !important;
 
@@ -330,4 +330,67 @@ textarea::placeholder {
         0 0 30px rgba(120, 0, 255, 0.4);
 
     background: #000;
+}
+
+
+/* ================= HERO BUTTON GROUP ================= */
+.hero-buttons {
+    margin-top: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 28px; /* more breathing space */
+    flex-wrap: wrap;
+}
+
+/* ================= HERO BUTTON BASE ================= */
+.hero-btn {
+    padding: 14px 42px;
+    border-radius: 999px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    text-decoration: none;
+    transition: all 0.35s ease;
+    position: relative;
+}
+
+/* ================= PRIMARY (Projects) ================= */
+.primary-btn {
+    background: linear-gradient(90deg, #7c3aed, #22d3ee);
+    color: #000;
+    box-shadow: 0 0 25px rgba(34, 211, 238, 0.6);
+}
+
+.primary-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 40px rgba(34, 211, 238, 0.9);
+}
+
+/* ================= SECONDARY (Resume) ================= */
+.secondary-btn {
+    background: transparent;
+    border: 2px solid #22d3ee;
+    color: #22d3ee;
+}
+
+.secondary-btn:hover {
+    background: #22d3ee;
+    color: #000;
+    transform: translateY(-3px);
+    box-shadow: 0 0 30px rgba(34, 211, 238, 0.7);
+}
+
+/* ================= MOBILE FIX ================= */
+@media (max-width: 600px) {
+    .hero-buttons {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .hero-btn {
+        width: 100%;
+        max-width: 260px;
+        text-align: center;
+    }
 }

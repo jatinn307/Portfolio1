@@ -13,7 +13,19 @@
       
     </div>
 
-  <a class="btn" href="/projects">View Projects</a>
+
+<div class="hero-buttons">
+    <a href="#projects" class="btn hero-btn primary-btn">
+        View Projects
+    </a>
+
+    <a href="{{ url_for('static', filename='resume.pdf') }}"
+       class="btn hero-btn secondary-btn"
+       download>
+        Download Resume
+    </a>
+</div>
+
 
 </section>
 
